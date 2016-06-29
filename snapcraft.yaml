@@ -1,0 +1,15 @@
+name: telecom-tower
+version: 2.0.0
+summary: HEIA-FR Telecom Tower LED Display
+description: Displays messages on the LEDs of the Telecom Tower
+confinement: devmode  # use "strict" to enforce system access only via declared interfaces
+
+apps:
+  telecom-tower:
+    command: bin/telecom-tower-server
+    daemon: simple
+
+parts:
+    telecom-tower:
+        plugin: pymake
+        source: ./
