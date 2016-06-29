@@ -1,3 +1,9 @@
+# Install go 1.6
+
+# Install the required packages
+
+sudo apt-get install scons gcc-arm-linux-gnueabihf
+
 # Build with
 
 snapcraft --target-arch=armhf
